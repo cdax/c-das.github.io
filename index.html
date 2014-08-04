@@ -1,0 +1,48 @@
+---
+layout: default
+title: Your New Jekyll Site
+---
+
+<div id="home">
+    <div class="row links">
+        <div class="large-3 medium-6 small-12 columns">
+            <h1><span class="linkheader">/about</span></h1>
+            <p>
+                I'm a web-developer living in Gurgaon, India. Much of my work has been across a modern-day Javascript stack, that usually comprises:</p>
+                <ul>
+                    <li><a href="http://www.mongodb.org/" target="_blank">MongoDB</a> for storage and <a href="http://mongoosejs.com/" target="_blank">Mongoose</a> for the wiring</li>
+                    <li><a href="http://nodejs.org/" target="_blank">Node.js</a> and <a href="http://expressjs.com/" target="_blank">Express</a> on the server-side</li>
+                    <li><a href="https://angularjs.org/" target="_blank">Angular.js</a> on the client-side</li>
+                    <li>ZURB's <a href="http://foundation.zurb.com/" target="_blank">Foundation 5</a> for the front-end</li>
+                </ul>
+            <p>Off-work, I like experimenting with canvas graphics using algorithms that simulate life and organic matter, like <a href="http://en.wikipedia.org/wiki/L-system" target="_blank">Lindenmayer trees</a>, <a href="http://en.wikipedia.org/wiki/Metaballs" target="_blank">Metaballs</a> and <a href="http://www.red3d.com/cwr/boids/" target="_blank">Boids</a> -- the interactive creatures that you see swimming in the background on this website. 
+            </p>
+        </div>
+        <div class="large-3 medium-6 small-12 columns">
+            <h1><span class="linkheader">/blog</span></h1>
+            <ul class="posts">
+            {% for post in site.posts %}
+            <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+            </ul>
+        </div>
+        <div class="large-3 medium-6 small-12 columns">
+            <h1><span class="linkheader">/contact</span></h1>
+            <p>
+            Getting in touch with me is as simple as writing me an <a href="mailto:chitharanjan.das@gmail.com?Subject=Hi">e-mail</a>.
+            </p>
+            <p>
+            You can also check out all of the code that I've uploaded to <a href="https://github.com/c-das" target="_blank"/>Github</a>, or look me up on <a href="https://www.facebook.com/chitharanjandasnair" target="_blank">Facebook</a>. I'm also on <a href="http://dribbble.com/cdas" target="_blank">Dribbble</a>, waiting for an invite so I can put up some of my work there.
+            </p>
+            <p class="tldr">
+                <a href="mailto:chitharanjan.das@gmail.com?Subject=Hi"><i class="fa fa-envelope"></i></a>  <a href="https://github.com/c-das" target="_blank"/><i class="fa fa-github-alt"></i></a> <a href="https://www.facebook.com/chitharanjandasnair" target="_blank"><i class="fa fa-facebook-square"></i></a> <a href="http://dribbble.com/cdas" target="_blank"><i class="fa fa-dribbble"></i></a>
+            </p>
+        </div>
+        <div class="large-3 medium-6 small-12 columns">
+            <h1><span class="linkheader">/work</span></h1>
+            <p>I'm currently working on <em>Headrush</em>, a web app for social quizzing. It's being developed on a <a href="http://en.wikipedia.org/wiki/MEAN" target="_blank">MEAN stack</a>, and an early release is coming soon to <a href="http://www.heroku.com/">Heroku</a>. Subscribe to my blog to stay tuned.</p>
+            <p class="colophon">This website was set up using <a href="http://yeoman.io/">Yeoman</a>, <a href="http://jekyllrb.com/">Jekyll</a> and <a href="http://foundation.zurb.com/" target="_blank">Foundation</a>. Hosted by <a href="http://pages.github.com/" target="_blank">Github Pages</a>. Icons provided by <a href="http://fortawesome.github.io/Font-Awesome/icons/">Font Awesome</a>. The font is <a href="http://www.google.com/fonts/specimen/Roboto">Roboto by Christian Robertson</a>.</p>
+            <p>Background boids courtesy <a href="http://paperjs.org/" target="_blank">Paperjs</a>.</p>
+        </div>
+    </div>
+</div>
