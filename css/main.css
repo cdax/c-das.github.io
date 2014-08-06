@@ -182,8 +182,8 @@ border-radius: 3px;
     border-top: 1px dotted #000;
     padding-top: 20px;
     color: #333;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.3);
+    /*color: white;
+    background-color: rgba(0, 0, 0, 0.3);*/
 }
 
 .links a {
